@@ -117,6 +117,7 @@ if __name__ == "__main__":
     if len(fixed) < 2:
         print("Nicht genug Fixpunkte gefunden (mindestens 2 erforderlich).")
     else:
+        print_timetable(trkpts, fixed)
         output_file = "Path/to/your/folder"  # Specify the output CSV file path
         save_timetable_to_csv(trkpts, fixed, output_file)
         print(f"Zeitplan wurde in die Datei '{output_file}' gespeichert.")
