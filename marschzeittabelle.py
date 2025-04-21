@@ -67,7 +67,9 @@ def performance_km(dist_km, gain_m,loss_m):
 # --- ZEIT (NAISMITH) ---
 def naismith_time(lkm):
     kmh = 4.0   # geschwindigkeit kann man hier ändern
-    return lkm/kmh
+    h = round((lkm /kmh)-0.5, 0)
+    min = 0.60*((lkm/kmh)-h)
+    return h+min
 
 
 # --- AUSGABE ---
